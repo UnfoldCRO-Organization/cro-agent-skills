@@ -18,7 +18,9 @@ import sys
 
 EXTS = (".md", ".py", ".sh", ".txt", ".json", ".js", ".ts", ".yml", ".yaml", ".html", ".css")
 
-BRAND_RE = re.compile(r"\b(unfoldcro|ufc)\b", re.I)
+# Flag the brand token in prose, but allow the org's own GitHub paths — "unfoldcro/<repo>"
+# and "unfoldcro-skills" — which legitimately appear in this repo's own URLs.
+BRAND_RE = re.compile(r"\b(unfoldcro|ufc)\b(?![/-])", re.I)
 EMAIL_RE = re.compile(r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}")
 PATH_RE = re.compile(r"/Users/\w+[^\s`\"']*")
 MEMLINK_RE = re.compile(r"\[\[[a-z0-9-]+\]\]")
