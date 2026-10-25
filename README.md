@@ -4,6 +4,10 @@ A public library of <!-- OWN-COUNT -->32<!-- /OWN-COUNT --> Claude Code **skills
 
 Skills are model-invoked: once installed, Claude Code reads each skill's description and fires the right one automatically when your request matches. You don't type a slash command.
 
+**Portability:** `SKILL.md` is Anthropic's Agent Skills format — native and auto-invoked in Claude Code and the Claude apps. Other agents (Codex, etc.) don't auto-discover them, but each skill is plain markdown + optional `references/`/`scripts/`, so you can read, paste, or point any model at the file manually.
+
+See [GOOD-REPOS.md](GOOD-REPOS.md) for the tracked library of skill/tool repos we evaluate, with verdicts and a monthly refresh.
+
 ## Install
 
 Copy any skill folder into your Claude Code skills directory:
