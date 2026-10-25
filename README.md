@@ -4,9 +4,7 @@ A public library of <!-- OWN-COUNT -->32<!-- /OWN-COUNT --> Claude Code **skills
 
 Skills are model-invoked: once installed, Claude Code reads each skill's description and fires the right one automatically when your request matches. You don't type a slash command.
 
-**Portability:** `SKILL.md` is Anthropic's Agent Skills format — native and auto-invoked in Claude Code and the Claude apps. Other agents (Codex, etc.) don't auto-discover them, but each skill is plain markdown + optional `references/`/`scripts/`, so you can read, paste, or point any model at the file manually.
-
-See [GOOD-REPOS.md](GOOD-REPOS.md) for the tracked library of skill/tool repos we evaluate, with verdicts and a monthly refresh.
+**Does it work in every AI tool?** Partly. `SKILL.md` is Anthropic's Agent Skills format, so these are **native and auto-invoked in Claude Code and the Claude apps**. Other agents (Codex, Cursor, etc.) don't auto-discover or auto-fire them — but every skill is plain Markdown plus optional `references/` and `scripts/`, so you can read it, paste the relevant `SKILL.md` into any model, or point any agent at the file manually. The bundled scripts run anywhere. Short version: **auto in Claude, usable-as-content everywhere else.**
 
 ## Install
 
@@ -116,6 +114,12 @@ These are **listed, not vendored** — fetch each from its own upstream. `script
 | `shopify-ai-toolkit@claude-plugins-official` | `claude plugin update shopify-ai-toolkit@claude-plugins-official --scope user` |
 | `liquid-lsp@claude-plugins-official` | `claude plugin update liquid-lsp@claude-plugins-official --scope user` |
 <!-- THIRD-PARTY:END -->
+
+## Tracked good repos
+
+Beyond the skills in this repo, we keep a running, opinionated library of Claude Code skill/plugin/tool repos worth knowing about — each with a verdict (**Adopted / Subset / Watching / Parked / Skipped**) and the reason, plus a terse-output comparison and a positioning table vs other skill libraries. It's reviewed on the 1st of each month (a scheduled workflow opens a reminder issue).
+
+→ **[GOOD-REPOS.md](GOOD-REPOS.md)** — the full library, comparison, and review log.
 
 ## Keeping it current
 
