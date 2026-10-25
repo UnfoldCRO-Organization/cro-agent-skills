@@ -1,4 +1,4 @@
-# agent-skills
+# CRO Agent Skills
 
 A public library of <!-- OWN-COUNT -->32<!-- /OWN-COUNT --> Claude Code **skills** for agency and product work — development, planning, SEO, security, data, and legal/compliance research — plus a curated index of the third-party skills and plugins they pair with.
 
