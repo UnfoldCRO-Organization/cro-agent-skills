@@ -4,7 +4,7 @@ A public library of <!-- OWN-COUNT -->32<!-- /OWN-COUNT --> Claude Code **skills
 
 Skills are model-invoked: once installed, Claude Code reads each skill's description and fires the right one automatically when your request matches. You don't type a slash command.
 
-**Does it work in every AI tool?** Partly. `SKILL.md` is Anthropic's Agent Skills format, so these are **native and auto-invoked in Claude Code and the Claude apps**. Other agents (Codex, Cursor, etc.) don't auto-discover or auto-fire them — but every skill is plain Markdown plus optional `references/` and `scripts/`, so you can read it, paste the relevant `SKILL.md` into any model, or point any agent at the file manually. The bundled scripts run anywhere. Short version: **auto in Claude, usable-as-content everywhere else.**
+**Does it work in every AI tool?** Partly. `SKILL.md` is Anthropic's Agent Skills format, so these are **native and auto-invoked in Claude Code and the Claude apps**. Other agents (Codex, Cursor, etc.) don't auto-discover or auto-fire them — but every skill is plain Markdown plus optional `references/` and `scripts/`, so you can read it, paste the relevant `SKILL.md` into any model, or point any agent at the file manually. The bundled scripts run anywhere. Short version: **auto in Claude, usable-as-content everywhere else.** See [AGENTS.md](AGENTS.md) for how non-Claude agents should use these.
 
 ## Install
 
