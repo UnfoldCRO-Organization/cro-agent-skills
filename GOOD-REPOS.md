@@ -53,13 +53,13 @@ Several repos offer a compressed / low-token output style. We compared them and 
 
 caveman won on: keeps every fact/command/path exact, has an on/off toggle that persists across a session, and ships as a maintained plugin with a marketplace update path.
 
-## agent-skills vs other skill libraries
+## CRO Agent Skills vs other skill libraries
 
 How this repo compares to other public Claude Code skill collections. Most are either single-domain packs or raw dumps; this one is a curated, opinionated, security-gated set across several domains, with verdicts and a monthly-maintained repo index.
 
 | Repo | Scope | Curated / opinionated | Security-scrubbed | Maintained cadence | Comparison / verdicts |
 |---|---|---|---|---|---|
-| **agent-skills** (this repo) | Multi-domain: dev, planning, SEO, security, data, legal | Yes — verdicts + skip reasons | Yes — leak gate on every publish | Monthly review + third-party drift | Yes — this file |
+| **CRO Agent Skills** (this repo) | Multi-domain: dev, planning, SEO, security, data, legal | Yes — verdicts + skip reasons | Yes — leak gate on every publish | Monthly review + third-party drift | Yes — this file |
 | anthropics/skills (official) | General/reference examples | Reference, not opinionated | n/a | Per release | No |
 | obra/superpowers | Dev methodology | Yes | n/a | Active | No |
 | coreyhaines31/marketingskills | Marketing only | Yes | n/a | Active | No |
