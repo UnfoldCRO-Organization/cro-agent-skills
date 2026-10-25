@@ -116,7 +116,7 @@ These are **listed, not vendored** — fetch each from its own upstream. `script
 ## Keeping it current
 
 - **Third-party:** `scripts/update-third-party.sh --check` reports drift; without `--check` it re-pulls and bumps the pins. Needs `gh`, `npx`, `python3`, and the Claude binary for plugins.
-- **Own skills:** this repo's skills are maintained in a private source-of-truth workspace and mirrored here through `scripts/sync-from-private.sh`, which copies an allow-list, scrubs internal references, and runs a leak gate before writing anything. Nothing is published that fails the gate.
+- **Own skills:** maintained in a private source-of-truth workspace and mirrored here by `scripts/sync-from-private.sh`, which scrubs internal references and runs a leak gate before writing — nothing that fails the gate is published. 27 fully-generic skills auto-sync from the private source each run; the other 5 (`dev-agents`, `dev-patterns`, `make-slides`, `setup-project-context`, `site-incident`) are hand-cleaned and edited directly here, so the sync never overwrites them.
 
 ## Repo layout
 
