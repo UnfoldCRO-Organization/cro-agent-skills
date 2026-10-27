@@ -40,6 +40,10 @@ Verdicts: **Adopted** (in use) · **Subset** (we took part of it) · **Watching*
 | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | Autonomous pentest agent | Skipped | Heavy infra; out of scope for day-to-day work |
 | [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | Local audio→text (Whisper) + TTS desktop app | Skipped | Trialed and removed; standalone app, not a skill |
 | [Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv) | Debloat any Android/Google TV over Wi-Fi via ADB; Apple-TV-style launcher | Noted | Standalone app (Java, ~33k★), not a Claude skill; useful utility |
+| [flyingrobots/graft](https://github.com/flyingrobots/graft) | Repo context layer: persistent Markdown knowledge-graph of a codebase for coding agents (MCP) | Watching | v0.x, single maintainer, ~353 dl/wk, no install scripts; writes gitignored `.graft/` + a CLAUDE.md snippet. Per-repo opt-in trial, not a global install |
+| [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) | Agentic video production inside a coding assistant (Remotion/FFmpeg/HyperFrames) | Watching | AGPL, ~72k★ but **700+ skill files** — far too heavy to auto-load; evaluate as a separate on-demand repo; overlaps Higgsfield cloud video |
+| [VRSEN/agency-swarm](https://github.com/VRSEN/agency-swarm) | Python multi-agent framework on the OpenAI Agents SDK | Skipped | Different stack (standalone OpenAI app), not Claude Code skills/agents; orchestration already covered by dev-agents + subagents |
+| claude-memory-mcp & similar per-repo memory MCPs | Persist AI memory as a file committed to the repo | Skipped | Committing AI memory to git conflicts with our "no AI md on GitHub" rule; file-based memory already covers it. For codebase memory prefer Graft (gitignored) |
 
 ## Terse-output comparison (why caveman)
 
@@ -83,3 +87,6 @@ What makes this one worth a star:
 
 ### Reviewed 2026-10
 - Initial library. Adopted set matches `third-party-sources.json`. Skipped: superpowers (full overlap), ai-marketing-claude (overlap), pentagi (scope), kepano-obsidian (not skills), VoiceStudio (standalone app). Parked: Agent-Reach (needs social cookies).
+
+### Reviewed 2026-10-27
+- Evaluated graft, OpenMontage, codebase-memory MCPs, agency-swarm. **Watching:** graft (repo context-graph MCP — best fit, per-repo opt-in, pre-1.0 so not auto-installed), OpenMontage (huge but 700+ skill files, too heavy to auto-load). **Skipped:** agency-swarm (OpenAI-SDK stack, not Claude skills), git-committed memory MCPs (conflict with no-AI-md-on-GitHub). None auto-installed.
