@@ -90,3 +90,6 @@ What makes this one worth a star:
 
 ### Reviewed 2026-10-27
 - Evaluated graft, OpenMontage, codebase-memory MCPs, agency-swarm. **Watching:** graft (repo context-graph MCP — best fit, per-repo opt-in, pre-1.0 so not auto-installed), OpenMontage (huge but 700+ skill files, too heavy to auto-load). **Skipped:** agency-swarm (OpenAI-SDK stack, not Claude skills), git-committed memory MCPs (conflict with no-AI-md-on-GitHub). None auto-installed.
+
+### Reviewed 2026-10-31
+- Evaluated [Jakeschincariol/duel-skill](https://github.com/Jakeschincariol/duel-skill) — cross-model adversarial review (Claude defends its answer against an OpenAI critic over 1–3 rounds, returns a retained/revised/dropped/unresolved claim ledger). MIT, stdlib-only, security-careful (flags as data, `store:false`, run folder git-ignored). **Skipped:** capability already covered — single-provider adversarial pass by codex-challenge, and the stronger multi-model version by llm-council. Clean reference, nothing new to adopt.
