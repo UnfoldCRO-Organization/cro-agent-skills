@@ -45,6 +45,14 @@ Verdicts: **Adopted** (in use) · **Subset** (we took part of it) · **Watching*
 | [VRSEN/agency-swarm](https://github.com/VRSEN/agency-swarm) | Python multi-agent framework on the OpenAI Agents SDK | Skipped | Different stack (standalone OpenAI app), not Claude Code skills/agents; orchestration already covered by dev-agents + subagents |
 | claude-memory-mcp & similar per-repo memory MCPs | Persist AI memory as a file committed to the repo | Skipped | Committing AI memory to git conflicts with our "no AI md on GitHub" rule; file-based memory already covers it. For codebase memory prefer Graft (gitignored) |
 
+## Reference & asset links (non-repo)
+
+External resources (not repos or skills) kept here for quick recall during design/content work.
+
+| Resource | What it offers | Notes |
+|---|---|---|
+| [carlogos.org](https://www.carlogos.org/) | Car-manufacturer logos, emblems and brand history; HD PNG/SVG downloads | Asset reference for automotive design work. ⚠ Brand logos are trademarks — use within trademark / fair-use limits, never as our own marks |
+
 ## Terse-output comparison (why caveman)
 
 Several repos offer a compressed / low-token output style. We compared them and chose **caveman**:
@@ -93,3 +101,6 @@ What makes this one worth a star:
 
 ### Reviewed 2026-10-31
 - Evaluated [Jakeschincariol/duel-skill](https://github.com/Jakeschincariol/duel-skill) — cross-model adversarial review (Claude defends its answer against an OpenAI critic over 1–3 rounds, returns a retained/revised/dropped/unresolved claim ledger). MIT, stdlib-only, security-careful (flags as data, `store:false`, run folder git-ignored). **Skipped:** capability already covered — single-provider adversarial pass by codex-challenge, and the stronger multi-model version by llm-council. Clean reference, nothing new to adopt.
+
+### Reviewed 2026-11-04
+- Added [carlogos.org](https://www.carlogos.org/) to **Reference & asset links** — car-brand logo library (emblems, HD PNG/SVG, brand history) for automotive design work; non-repo resource, trademark-use caveat noted.
