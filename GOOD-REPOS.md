@@ -104,3 +104,6 @@ What makes this one worth a star:
 
 ### Reviewed 2026-11-04
 - Added [carlogos.org](https://www.carlogos.org/) to **Reference & asset links** — car-brand logo library (emblems, HD PNG/SVG, brand history) for automotive design work; non-repo resource, trademark-use caveat noted.
+
+### Reviewed 2026-11-07
+- Evaluated [elayadesign/ai-design-skills](https://github.com/elayadesign/ai-design-skills) — two pure-markdown skills, `figma-designer` (opinionated Figma-MCP token/state rules) and `landing-page-design` (intake → structure → conversion copy → SEO/AEO → visual tokens). MIT, 14.7k★, validator script clean (no eval/exec/subprocess/network), zero code execution. **Watching:** quality anti-slop reference but heavy overlap — landing-page-design duplicates cro + copywriting + website-design + refero-design + responsive-polish; figma-designer overlaps the official Figma skills and our Astryx approach. Not adopted.
